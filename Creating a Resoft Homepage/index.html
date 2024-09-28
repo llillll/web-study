@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1. maximum-scale=1, user-scalable=no">
+    <title>RESOFT</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/nav1page.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+    
+
+<!-- 피겨화면-->
+<div id="figure">
+    <img class="bg" src="./image/bg1.png" alt="bg1">
+    <img class="bg" src="./image/bg2.png" alt="bg2">
+    <img class="bg" src="./image/bg3.png" alt="bg3">
+    
+     <nav>
+        <div class="menu">
+            <a href="index.html" class="logo"></a>
+            <ul id="menu-list">
+                <li><a href="page2.html">회사소개</a></li>
+                <li><a href="page3.html">사업현황</a></li>
+                <li><a href="page4.html">정보마당</a></li>   
+            </ul>
+            <div class="ham_total">
+
+               <button onclick="hambutton()" class="ham"></button>
+                <div id="ham_bg">
+                    <ul id="ham_list">
+                    <li><a href="page2.html"><span>REsoft소개</span></a>
+                      <a href="page2.html#history"><span>연혁</span></a>
+                      <a href="page2.html#org"><span>조직도</span></a>
+                      <a href="page2.html#certi"><span>특허 & 인증</span></a>
+                      <a href="page2.html#way"><span>오시는 길</span></a></li> 
+                    <li><a href="page3.html#ECO-Clean"><span>ECOCE</span></a>
+                        <a href="page3.html#moaDo"><span>moaDo</span></a>
+                        <a href="page3.html#ETC"><span>ETC</span></a></li>
+                    <li><a href="page4.html">REsoft소식</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </nav>
+   
+    <div class="inner">
+        <h1>Evolution<br>
+        With New Software</h1>
+        <p>Mobil APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse,<br>
+        Responsive WEBsite, Brand Design Launch, ICT Consulting</p>
+        
+      <div class="bglist">
+        <button class="left" onclick="left(-1)"></button>
+        <button class="stop" onclick="stoptimer()"></button>
+        <button class="play" onclick="slideShow()"></button>
+        <button class="right" onclick="left(1)"></button>
+      </div>
+    </div>
+</div>
+
+<!-- 리소프트의 새로운 소식-->
+    
+<section>
+    <div class="inner">
+        <h1>리소프트의 새로운 소식</h1>
+        <p class="subtitle1">RESOFT NEWS</p>
+        <div class="wrap">
+            <article>
+               <div class="pic">
+                <img src="./image/square36.png" alt="sqaure36">
+               </div>
+               <p class="text">lorem ipsum dolor sit amet,<br>consetetur sadipscing elit...</p>
+               <p class="date">2022.01.01</p>
+            </article>
+
+            <div class="vl"></div>
+
+            <article>
+                <div class="pic">
+                 <img src="./image/square36.png" alt="square36">
+                </div>
+                <p class="text">lorem ipsum dolor sit amet,<br>consetetur sadipscing elit...</p>  
+                <p class="date">2022.01.01</p>
+             </article>
+
+             <div class="vl"></div>
+
+             <article>
+                <div class="pic">
+                 <img src="./image/square36.png" alt="square36">
+                </div>
+                <p class="text">lorem ipsum dolor sit amet,<br>consetetur sadipscing elit...</p>    
+                <p class="date">2022.01.01</p>
+             </article>
+
+             <div class="vl"></div>
+
+             <article>
+                <div class="pic">
+                 <img src="./image/square36.png" alt="sqaure36">
+                </div>
+                <p class="text">lorem ipsum dolor sit amet,<br>consetetur sadipscing elit...</p>            
+                <p class="date">2022.01.01</p>
+             </article>
+        </div>
+    </div>
+</section>
+
+
+<!--프로젝트-->
+
+
+<div class="project">
+
+    <div class="title">
+        <p class="maintitle">
+            프로젝트</p>
+        <p class="subtitle2">
+            RESOFT PROJECT</p>
+        <p class="subtitle3">
+            쾌적한 서비스 제공을 위해 사용자 입장에서<br>
+            생각하고 항상 새로운 도전을 시도합니다.</p>
+    </div>
+
+    <div class="pic2">
+        <img src="./image/projectimg1.png" style="width: 100%; height: 100%;" alt="group1561">
+        <span class="pic2text">
+            <h3>에코스 ECOCE(ECO-Clean Earth)</h3>
+            <p>국내 최초<br>탄소중립 실천인증 플랫폼<p>
+        </span>
+    </div>
+
+    <div class="pic3">
+        <img src="./image/projectimg2.png" style="width: 100%; height: 100%;" alt="mainvisual">
+        <span class="pic3text">
+            <h3>모아두(moaDo)</h3>
+            <p>내 손안의 모바일 회원수첩<p>
+        </span>
+    </div>
+    <span id="ani1">
+    </span>
+    
+    <span id="ani3">
+    </span>
+    
+</div>
+
+<!-- 서비스 -->
+
+<div class="service">
+
+    <div class="servicetitle">
+        <p class="servicemaintitle">
+            서비스</p>
+        <p class="servicesubtitle2">
+            SERVICE</p>
+        <p class="servicesubtitle3">
+            다양한 기술플랫폼을 제공하여 가능성을 열어주고<br>
+            의미있는 성공으로 인도하는 서비스를 제공합니다.</p>
+    </div>
+    
+    
+    <div class="card1">
+        <img class= "cardimg" src="./image/card1.png" style="height: 100%; width: 100%" alt="cardimg1">
+
+        <span class="card1text1 cardtext1">                     
+           <h1>앱(APP) 개발<h1>
+           <h2>ANDROID/IOS</h2>
+        </span>
+        <span class="card1text2 cardtext2">                     
+            <h2>Android 앱 개발</h2>
+            <h2>iOS 앱 개발</h2>
+            <h2>플랫폼 기획 및 설계</h2>
+         </span>
+     </div>
+        
+     <div class="card2">
+        <img class= "cardimg" src="./image/card2.png" style="height: 100%; width: 100%" alt="cardimg2">
+        <div class="card2text1 cardtext1">                     
+           <h1>웹(WEB) 구축<h1>
+           <h2>RESPONSIVE WEB</h2>
+        </div>
+        <div class="card2text2 cardtext2">                     
+            <h2>반응형 홈페이지 구축<h2>
+            <h2>데이터베이스 구축</h2>
+            <h2>빅데이터 구축</h2>
+         </div>
+     </div>
+     
+
+     <div class="card3">
+        <img class= "cardimg" src="./image/card3.png" style="height: 100%; width: 100%" alt="cardimg3">
+        <div class="card3text1 cardtext1">                     
+           <h1>AI기반 기술개발<h1>
+           <h2>AI BIGDATA</h2>
+        </div>
+        <div class="card3text2 cardtext2">                     
+            <h2>AI 대화형 챗봇<h2>
+            <h2>자동 객체인식 검출기</h2>
+            <h2>딥러닝 학습 모델</h2>
+         </div>
+      </div>
+
+     <div class="card4">
+        <img class= "cardimg" src="./image/card4.png" style="height: 100%; width: 100%" alt="cardimg4">
+        <div class="card4text1 cardtext1">
+            <h1>XR 콘텐츠 구현<h1>
+            <h2>METAVERSE</h2>                     
+        </div>
+        <div class="card4text2 cardtext2">
+            <h2>실감형 플랫폼 구축<h2>
+            <h2>가상현실 콘텐츠 제작</h2>
+            <h2>게임콘텐츠 제작</h2>                     
+           
+        </div>
+     </div>
+
+
+    <span id="ani2">
+    </span>
+
+    <span id="ani4">
+    </span>
+</div>
+
+
+<!--레퍼런스-->
+
+<div class="ref">
+
+    <div class="refsection">
+
+       <div class="reftitle">
+        <p class="refmaintitle">
+            레퍼런스</p>
+        <p class="refsubtitle2">
+            REFERENCE</p>
+        </div>
+    
+        <hr class="hr"/>
+    <div class="gridcontainer">
+
+        <div class="griditem">
+            <img src="./image/architect.png" alt="architect">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/colorfuldaegu.svg" alt="colorfuldaegu">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/maeilnews.svg" alt="maeilnews">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/kyungbukuniv.svg" alt="kyungbukuniv">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/daegumoonhwa.png" alt="daegumoonhwa">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/daeguPE.png" alt="daeguPE">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/daegauniv.svg" alt="daeguaniv">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/songpa.svg" alt="songpa">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/gookhim.svg" alt="gookhim">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/lionsclub.svg" alt="lionsclub">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/koreaelectric.png" alt="koreaelectric">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/barumi.png" alt="barumi">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/koreaoceanuniv.svg" alt="koreaoceanuniv">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/korcham.png" alt="korcham"> 
+        </div>
+
+        <div class="griditem">
+            <img src="./image/CAK.svg" alt="cak">
+        </div>    
+         
+        <div class="griditem">
+            <img src="./image/youthmeeting.svg" alt="youthmeeting">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/keimyung.svg" alt="keimyung">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/mokpo.svg" alt="mokpo">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/daegugonggo.png" alt="daegugonggo">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/daegyungICT.png" alt="daegyungICT">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/koreajori.png" alt="koreajori">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/ITwomen.png" alt="itwomen">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/joongso.svg" alt="joongso">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/daegucredit.png" alt="daegucredit">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/dalseo.svg" alt="dalseo">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/daegudigital.png" alt="dgdigital">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/rotari.png" alt="rotari">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/happysuseong.svg" alt="happysuseong">
+        </div>
+
+        <div class="griditem">
+            <img src="./image/daegutraffic.svg" alt="dgtraffic">
+        </div>
+   </div>         
+ </div>
+</div>
+
+
+<!-- 푸터 -->
+<footer>
+    <div class="footer_wrap">
+
+        <div class="img-wrap">
+            <img src="./image/resoft.svg" alt="footer_logo" />
+            <p class="copyright">© RESOFT CO.LTD. All Rights Reserved. </p>
+        </div>
+          
+        <div class="footer_content">
+            
+            <div class="footer_info1">
+                <p>
+                    <span>상호: </span><span>(주)리소프트</span>
+                </p>
+                <p>
+                    <span>사업자등록번호: </span><span>722-81-02219</span>
+                </p>
+                <p>
+                <span>주소: </span><span>(41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 704호 (신천동 106)</span>
+                </p>
+            </div> 
+
+            <div class="footer_info2" >
+                <p>
+                    <span>대표이사: </span><span>오유나</span>
+                    <span>개인정보책임자: </span><span>이현지</span>
+                </p>
+                <p>
+                    <span>전화:</span><span></span> (053) 475-2110</span>
+                    <span>팩스:</span><span></span> (0504) 257-5966</span>
+                    <span>이메일:</span><span></span> call@resoft.kr</span>
+                <p>
+            </div>
+            <br>
+            
+        </div>
+    </div>
+</footer>
+</body>
+</html>

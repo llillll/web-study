@@ -1,0 +1,208 @@
+nav {
+  width: 100%;
+  max-width: 1920px;
+  position: fixed;
+  top: 0px;
+  height: 80px;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: transparent;
+}
+
+nav.menu {
+  position: relative;
+}
+
+nav .menu .logo {
+  background-image: url(../image/1_Re_white.svg);
+  object-fit: cover;
+  position: absolute;
+  /* left:320px; */
+  left: 360px;
+  top: 25px;
+  bottom: 25px;
+  height: 30px;
+  width: 133px;
+}
+
+nav .menu .logo img {
+  object-fit: cover;
+  height: 30px;
+  width: 133px;
+}
+
+nav .menu #menu-list {
+  top: 26px;
+  bottom: 26px;
+  right: 370px;
+  width: 400px;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+}
+
+nav .menu .ham_total .ham {
+  background-image: url(../image/hambutton.svg);
+  background-color: transparent;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 25px;
+  right: 250px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.menu1,
+.menu2,
+.menu3 {
+  transition: all 0.5s;
+}
+
+nav .menu #menu-list li a:hover {
+  color: #184b9f;
+  border-bottom: 6px solid #184b9f;
+  transition: linear 1s;
+}
+
+nav .menu #menu-list li a {
+  color: white;
+  letter-spacing: 0;
+  text-align: left;
+  font: normal normal bold 20px/29px Noto Sans KR;
+  letter-spacing: 0px;
+  opacity: 1;
+  text-decoration: none;
+}
+
+nav.active {
+  background-color: white;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+nav.active .menu #menu-list li a {
+  color: black;
+  transition: 0.5s;
+}
+
+nav.active .menu .logo {
+  background-image: url(../image/2_resoft.svg);
+  transition: 0.5s;
+  object-fit: cover;
+  position: absolute;
+  /* left:320px; */
+  left: 360px;
+  top: 25px;
+  bottom: 25px;
+  height: 30px;
+  width: 140px;
+}
+
+nav.active .menu .ham_total .ham {
+  background-image: url(../image/page5_slide_icon.jpg);
+  transition: 0.5s;
+}
+
+/* 추가 */
+nav .menu .ham_total #ham_bg {
+  display: none;
+  top: 80px;
+  right: 0px;
+  width: 100%;
+  /* width:1920px; */
+  height: 180px;
+  position: absolute;
+  background-color: #184b9f;
+  opacity: 0.7;
+}
+
+nav .menu #ham_list {
+  display: flex;
+  justify-content: space-evenly;
+  right: 370px;
+  width: 400px;
+  height: 250px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+nav .menu #ham_list a {
+  color: #fff;
+  letter-spacing: 0;
+  text-align: left;
+  font: normal normal bold 20px/25px Noto Sans KR;
+  opacity: 1;
+  text-decoration: none;
+}
+
+nav .menu #ham_list li {
+  list-style: none;
+}
+
+nav .menu .ham_total span {
+  display: flex;
+  margin-bottom: 7px;
+}
+
+@animation @media (min-width:0px) and (max-width:768px) {
+  nav {
+    width: 767px;
+  }
+
+  nav .menu .logo {
+    left: 25px;
+  }
+
+  nav .menu #menu-list {
+    display: none;
+  }
+
+  nav .menu .ham_total .ham {
+    right: 50px;
+  }
+
+  nav .menu #ham_list {
+    width: 400px;
+    right: 80px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1280px) {
+  nav {
+    width: 1280px;
+    height: 80px;
+  }
+
+  nav .menu {
+    position: relative;
+  }
+
+  nav .menu .logo {
+    left: 140px;
+    top: 25px;
+    bottom: 25px;
+  }
+
+  nav .menu #menu-list {
+    top: 26px;
+    left: 620px;
+    width: 400px;
+    height: 39px;
+    font: normal normal bold 20px/29px Noto Sans KR;
+  }
+
+  nav .menu .ham_total .ham {
+    top: 24px;
+    right: 190px;
+    width: 32px;
+    height: 32px;
+  }
+
+  nav .menu #ham_list {
+    width: 400px;
+    right: 250px;
+  }
+}
+
+

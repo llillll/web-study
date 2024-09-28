@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESOFT</title>
+    <link rel="stylesheet" href="./css/nav2page.css">
+    <link rel="stylesheet" href="./css/page3.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+</head>
+<body>   
+    <nav>
+        <div class="menu">
+            <a href="index.html" class="logo"><img src="./image/2_resoft.svg"></a>
+            <ul id="menu-list">
+                <li><a href="page2.html">회사소개</a></li>
+                <li><a href="page3.html">사업현황</a></li>
+                <li><a href="page4.html">정보마당</a></li>   
+            </ul>
+            <div class="ham_total">
+
+                <button onclick="hambutton()" class="ham" style="cursor:pointer;"><img src="./image/2_menu.svg" alt=""></button>
+                <div id="ham_bg">
+                    <ul id="ham_list">
+                          <li><a href="page2.html"><span>REsoft소개</span></a>
+                          <a href="page2.html#history"><span>연혁</span></a>
+                          <a href="page2.html#org"><span>조직도</span></a>
+                          <a href="page2.html#certi"><span>특허 & 인증</span></a>
+                          <a href="page2.html#way"><span>오시는 길</span></a></li> 
+                          <li><a href="page3.html#ECO-Clean"><span>ECOCE</span></a>
+                            <a href="page3.html#moaDo"><span>moaDo</span></a>
+                            <a href="page3.html#ETC"><span>ETC</span></a></li>
+                        <li><a href="page4.html">REsoft소식</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            
+        
+        </div>
+    </nav>
+    
+    <!-- 헤더 -->
+    
+    <header>
+            <h1 class="page-title">사업현황</h1>
+    </header>
+    
+
+    
+    <section id = "ECO-Clean">
+        <div class="ECE-title wow fadeInDown" data-wow-delay = "0.3s">
+            <h1>에코스</h1>
+            <p>ECO-Clean Earth</p>
+        </div>
+        <div class = "ECE-left">
+            <img class="back-img wow fadeInLeft" data-wow-delay = "0.3s" src="./image/ecoce(1).png">
+            <img class="front-img wow fadeInLeft" data-wow-delay = "0.3s" src="./image/ecoce(2).png">
+        </div>
+        <div class = "ECE-right">
+            <span class="wow fadeInRight" data-wow-delay = "0.1s">
+                국내 최초<br>
+                탄소중립 실천인증 플랫폼
+            </span>
+            <img src="./image/ecoce.svg" class="wow fadeInRight" data-wow-delay = "0.2s">
+            <p class="subtitle wow fadeInRight" data-wow-delay = "0.3s">ECO-Clean Earth</p>
+            <div class="btn">
+                <button class="google-btn wow fadeInRight" data-wow-delay = "0.3s" type="button" onclick="window.open('https://play.google.com/store/apps/details?id=com.resoft.ecoce')" style="cursor:pointer;"><p>Play Store에서<br>다운로드</p></button> 
+                <button class="apple-btn wow fadeInRight" data-wow-delay = "0.3s" type="button" onclick="window.open('https://apps.apple.com/kr/app/%EC%97%90%EC%BD%94%EC%8A%A4-%ED%83%84%EC%86%8C%EB%B0%9C%EC%9E%90%EA%B5%AD-%EA%B3%84%EC%82%B0-%ED%83%84%EC%86%8C%EC%A0%80%EA%B0%90%ED%99%9C%EB%8F%99-%EC%B1%8C%EB%A6%B0%EC%A7%80%EC%B0%B8%EC%97%AC/id1613634019')" style="cursor:pointer;"><p>APP Store에서<br>다운로드</p></button> 
+            </div>
+        </div>
+    </section>
+    
+    
+   <section id = "moaDo">
+        <div class="moaDo-title  wow fadeInDown" data-wow-delay = "0.3s">
+            <h1>모아두</h1>
+            <p>moaDo</p>
+        </div>
+        <div class = "wrapper wow fadeIn" data-wow-delay="0.2s">
+            <div class = "moaDo-left">
+                <img src="./image/moaDo(2).png">
+            </div>
+            <div class = "moaDo-right">
+                <p class="wow fadeInRight" data-wow-delay = "0.1s">내 손안의 모바일 회원수첩</p>
+                <img src="./image/moaDo.svg" class="wow fadeInRight" data-wow-delay = "0.2s">
+                <button class="wow fadeInRight" data-wow-delay = "0.3s"type="button" onclick="window.open('https://moado.co.kr/')" style="cursor:pointer;">사이트 바로가기</button>
+            </div>
+            <div class = "moaDo-middle wow fadeInUp" data-wow-delay = "0.3s">
+                <img src="./image/main-visual.png">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id = "ETC">
+        <div class="ETC-title wow fadeInDown" data-wow-delay = "0.3s">  
+            <h1>ETC</h1>
+            <p>PROJECTS</p>
+        </div> 
+        <div class = "project">
+            <img class = "project1 wow fadeInRight" src="./image/ETC22.png" data-wow-delay = "0.1s">
+            <img class = "project2 wow fadeInRight" src="./image/ETC21.png" data-wow-delay = "0.2s">
+            <img class = "project3 wow fadeInRight" src="./image/ETC20.png" data-wow-delay = "0.3s">
+            <img class = "project4 wow fadeInRight" src="./image/ETC23.png" data-wow-delay = "0.4s">
+            <img class = "project5 wow fadeInRight" src="./image/ETC24.png" data-wow-delay = "0.5s">
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="footer_wrap">
+    
+            <div class="img-wrap">
+                <img src="./image/page5_footer_logo.png" alt="footer_logo" />
+                <p class="copyright">© RESOFT CO.LTD. All Rights Reserved. </p>
+            </div>
+              
+            <div class="footer_content">
+                
+                <div class="footer_info1">
+                    <p>
+                        <span>상호: </span><span>(주)리소프트</span>
+                    </p>
+                    <p>
+                        <span>사업자등록번호: </span><span>722-81-02219</span>
+                    </p>
+                    <p>
+                    <span>주소: </span><span>(41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 704호 (신천동 106)</span>
+                    </p>
+                </div> 
+                <br>
+                <div class="footer_info2" >
+                    <p>
+                        <span>대표이사: </span><span>오유나</span>
+                        <span>개인정보책임자: </span><span>이현지</span>
+                    </p>
+                    <p>
+                        <span>전화:</span><span></span> (053) 475-2110</span>
+                        <span>팩스:</span><span></span> (0504) 257-5966</span>
+                        <span>이메일:</span><span></span> call@resoft.kr</span>
+                    <p>
+                </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    $(document).ready(function hambutton(){
+            $(".ham_total>.ham").click(function(){
+                var submenu = $(this).next("#ham_bg");
+
+                if(submenu.is(":visible")){
+                    submenu.slideUp();
+                }else{
+                    submenu.slideDown();
+                }
+            });
+        });  
+        new WOW().init();
+</script>
+
+</body>
+</html>
